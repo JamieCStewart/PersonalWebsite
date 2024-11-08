@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telemetry Plot</title>
+</head>
+<body>
+    <h1>Telemetry Plot for {{ driver }} at {{ race }} ({{ year }})</h1>
+    <!-- Display the plot as an image -->
+    <img src="{{ url_for('plot_png', year=year, driver=driver, race=race) }}" alt="Telemetry Plot">
+</body>
+</html>

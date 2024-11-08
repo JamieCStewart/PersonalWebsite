@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Telemetry Input</title>
+</head>
+<body>
+    <h1>Enter F1 Data to Generate Telemetry Plot</h1>
+    <form action="/f1" method="post">
+        <label for="year">Year:</label>
+        <input type="text" id="year" name="year" required><br><br>
+        
+        <label for="driver">Driver (Code e.g., VER for Verstappen):</label>
+        <input type="text" id="driver" name="driver" required><br><br>
+        
+        <label for="race">Race Track (e.g., Monaco, Silverstone):</label>
+        <input type="text" id="race" name="race" required><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
